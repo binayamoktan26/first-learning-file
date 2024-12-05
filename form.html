@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user registration</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <h1>user registration</h1>
+    <form action="" method="post" enctype="">
+      <p>
+        <label>User Name:</label>
+        <input type="text" name="userName" placeholder="user name" required />
+      </p>
+      <p>
+        <label for="">Email:</label>
+        <input type="email" name="email" placeholder="Email" required />
+      </p>
+      <p>
+        <label for="">Password:</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+      </p>
+      <p>
+        <label for="">Phone:</label>
+        <input
+          type="number"
+          placeholder="Phone Number"
+          name="ph number "
+          required
+        />
+      </p>
+      <p>
+        <label for="">Date of Birth:</label>
+        <input type="date" />
+      </p>
+      <p>
+        <label for="">Facebook:</label>
+        <input type="url" />
+      </p>
+      <p>
+        <label for="">Message:</label>
+        <textarea name="" id="" cols="30" rows="10">Message</textarea>
+      </p>
+      <!-- file send -->
+      <p>
+        <label for="">Upload resume :</label>
+        <input type="file" multiple />
+      </p>
+      <!-- radio button  -->
+      <p>
+        <label for="">Gender :</label>
+        <input type="radio" name="gender" /><label for="">Male</label>
+        <input type="radio" name="gender" /> <label for="">Female</label>
+
+        <input type="radio" name="gender" /><label for="">N/A</label>
+      </p>
+      <br />
+      <p>
+        <label for="">What do you want to learn?</label><br />
+        <input type="checkbox" /><label for="">HTML</label><br />
+        <input type="checkbox" /><label for="">CSS</label><br />
+        <input type="checkbox" /><label for="">Javascript</label>
+      </p>
+      <hr />
+      <p>
+        <input type="checkbox" />
+        <label for="">I accept the T&CS</label>
+      </p>
+      <!-- drop down select -->
+      <label for="">favourite place:</label>
+      <select name="" id="" multiple>
+        <option value="">-- select --</option>
+        <option value="">Mustang</option>
+        <option value="">Manang</option>
+        <option value="">Namchebazar</option>
+      </select>
+      <!-- option group -->
+      <p>
+        <label for="">Favourite place & Dream place:</label>
+        <select name="" id="">
+          <optgroup label="Favourite place">
+            <option value="">--select--</option>
+            <option value="">Mustang</option>
+            <option value="">Manang</option>
+            <option value="">Namchebazar</option>
+          </optgroup>
+          <optgroup label="Dream place">
+            <option value="">--select--</option>
+            <option value="">Tilicho lake</option>
+            <option value="">Tshorolpa lake</option>
+            <option value="">Everest Base Camp</option>
+          </optgroup>
+        </select>
+      </p>
+      <!-- datalist -->
+      <p>
+        <label for="">Favourite place & Dream place:</label>
+        <input type="text" list="place" />
+        <datalist id="place">
+          <option value="til">Tilicho lake</option>
+          <option value="tsho">Tshorolpa lake</option>
+          <option value="EBC">Everest Base Camp</option>
+          <option value="mustang">Mustang</option>
+          <option value="manag">Manang</option>
+          <option value="namchebazar">Namchebazar</option>
+        </datalist>
+      </p>
+      <p>
+        <button>submit</button>
+      </p>
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
